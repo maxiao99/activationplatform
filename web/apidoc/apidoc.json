@@ -1,0 +1,12 @@
+{
+  "name": "tyj",
+  "version": "1.0.0",
+  "description": "demo",
+  "title": "demo",
+  "url" : "http://localhost:30000/tyj/",
+  "template": {
+  	"withCompare": true,
+  	"withGenerator": true,
+    "forceLanguage": "zh-cn"
+  }
+}
