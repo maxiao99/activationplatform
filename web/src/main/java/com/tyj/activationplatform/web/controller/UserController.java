@@ -9,6 +9,7 @@ import com.github.fartherp.framework.core.util.JsonResp;
 import com.tyj.activationplatform.bean.dto.UserDto;
 import com.tyj.activationplatform.bean.vo.UserPageVo;
 import com.tyj.activationplatform.service.UserService;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -89,5 +90,12 @@ public class UserController extends AbstractController {
         List<UserDto> l = userService.findPageUser(vo.convertPageMap());
         vo.setRows(l);
         return JsonResp.asData(vo).setDatePattern(DateUtil.yyyy_MM_dd_HH_mm_ss).toJson();
+    }
+
+    @ResponseBody
+    @RequestMapping(value = "/login")
+    public String login(@Param("loginName") String loginName, @Param("password") String password) {
+        System.out.println(loginName + password);
+        return JsonResp.asEmpty().toJson();
     }
 }

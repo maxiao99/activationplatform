@@ -18,4 +18,6 @@ import java.util.Map;
 @SqlMapper
 public interface UserMapper extends DaoMapper<User, Integer> {
     List<UserDto> findPageUser(Map<String, Object> params);
+
+    User findByLoginName(String loginName);
 }

@@ -17,4 +17,6 @@ import java.util.Map;
 public interface UserDao extends SqlMapDao<User, Integer> {
 
     List<UserDto> findPageUser(Map<String, Object> params);
+
+    User findByLoginName(String loginName);
 }
