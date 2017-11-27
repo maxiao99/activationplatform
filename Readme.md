@@ -30,4 +30,11 @@
 ```
 对应UserMapper.xml方法名findPage* 开头就能拦截分页
 ```
+
+## 自动生成项目格式代码
+```
+1. 使用changelog/plugins下的code.war
+2. tomcat部署
+3. 访问主页http://ip:port/code/
+```
 	
