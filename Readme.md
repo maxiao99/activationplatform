@@ -37,4 +37,19 @@
 2. tomcat部署
 3. 访问主页http://ip:port/code/
 ```
+
+## 编码工具
+```
+推荐使用IDEA，和maven有很好的集成
+```
+
+## 项目启动
+```
+可以打包放入tomcat，或使用集成的maven的tomcat启动
+```
+
+## 访问路径
+```
+http://localhost:30000
+```
 	
