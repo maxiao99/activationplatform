@@ -20,7 +20,7 @@
     </properties>
 
     <build>
-        <finalName>tyj</finalName>
+        <finalName>ROOT</finalName>
         <defaultGoal>compile</defaultGoal>
         <resources>
             <resource>
